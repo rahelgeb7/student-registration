@@ -41,16 +41,5 @@ public class DBUtil {
         }
     }
 
-    public static void main(String[] args) {
-        Connection connection = null;
-        try {
-            connection = DBUtil.getConnection();
-            System.out.println("Connection successful!");
-        } catch (SQLException e) {
-            System.err.println("Connection failed!");
-            e.printStackTrace();
-        } finally {
-            DBUtil.close(connection);
-        }
-    }
+  
 }
